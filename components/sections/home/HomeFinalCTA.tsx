@@ -9,13 +9,13 @@ export default function HomeFinalCTA() {
       <div className="max-w-site mx-auto px-6 md:px-12 text-center flex flex-col items-center justify-center">
         <AnimateOnScroll animation="fade-up" duration={0.85}>
           <h2 className="font-display text-41 sm:text-52 md:text-65 text-paper max-w-3xl leading-[1.05] tracking-[-0.03em] font-normal mb-8 mx-auto">
-            Bring your roofing work plans to life.
+            Talk to Proven Roofing about your project.
           </h2>
         </AnimateOnScroll>
 
         <AnimateOnScroll animation="fade-up" duration={0.85} delay={0.15}>
           <p className="font-body text-17 md:text-21 text-paper/80 leading-relaxed max-w-xl mb-10 mx-auto">
-            Call during opening hours to discuss roof repairs, restoration, replacement, guttering or shed work.
+            Call any time to discuss roof repairs, new roofs, flat roofing or guttering work in County Cork.
           </p>
         </AnimateOnScroll>
 

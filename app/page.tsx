@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Roof Restoration & Repairs in Mount Gambier',
+  title: 'Roofing Contractor in Cork',
   description:
-    'DJ Maintenance & Construction provides roof restoration, roofing repairs, roof replacement, guttering and shed services in Mount Gambier. Call +61 448 752 232.',
+    'Proven Roofing LTD provides roof repairs, new roofs, flat roofing, guttering and roofline services across County Cork. Call +353 87 069 0272.',
   pathname: '/',
 });
 
@@ -47,7 +47,7 @@ export default function HomePage() {
       {/* SECTION 3: Roofing Services */}
       <PinnedHorizontalTrack
         items={serviceTrackItems}
-        title="Roofing & Construction Services"
+        title="Roofing Services in Cork"
       />
 
       {/* Signature Brand Device 2 of 4: Full-Bleed Section Divider */}
@@ -55,7 +55,7 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why Choose DJ Maintenance & Construction */}
+      {/* SECTION 4: Why Choose Proven Roofing */}
       <HomeWhyUs />
 
       {/* SECTION 5: Meet Our Team */}

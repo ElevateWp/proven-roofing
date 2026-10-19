@@ -8,18 +8,18 @@ import { CLINIC_INFO } from '@/lib/clinic-data';
 const HOME_FAQS: AccordionItem[] = [
   {
     question: 'What roofing services do you provide?',
-    answer: 'Roof installation, repairs, replacement, restoration, inspections, guttering, shed work and custom roofing projects.',
+    answer: 'Roof repairs, new roofs, flat roofing, roof tiling, skylights, chimneys, flashing, guttering and roofline services.',
     relatedLink: { href: '/services/', label: 'Explore our services →' },
   },
   {
     question: 'Do you cover my area?',
-    answer: 'DJ Maintenance & Construction is based in Mount Gambier, South Australia. Contact the team to discuss your property.',
+    answer: 'Proven Roofing is based in Cork, Ireland. Contact the team to discuss your property.',
     relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
   {
-    question: 'Can you help with guttering and sheds?',
-    answer: 'Yes. The service range includes gutter installation and maintenance, shed installation, and shed repair and restoration.',
-    relatedLink: { href: '/gutter-installation-maintenance/', label: 'Explore guttering →' },
+    question: 'Can you help with guttering and roofline work?',
+    answer: 'Yes. Our services include gutter repairs and installation, downpipes, soffit and fascia.',
+    relatedLink: { href: '/guttering-installations/', label: 'Explore guttering →' },
   },
   {
     question: 'How do I request a quote?',
@@ -27,7 +27,7 @@ const HOME_FAQS: AccordionItem[] = [
     relatedLink: { href: '/request-a-quote/', label: 'Request a quote →' },
   },
   {
-    question: 'Where is DJ Maintenance & Construction based?',
+    question: 'Where is Proven Roofing based?',
     answer: CLINIC_INFO.primaryLocation.directions,
     relatedLink: { href: '/contact/', label: 'Check our service area →' },
   },
@@ -47,7 +47,7 @@ export default function HomeFaqs() {
               Questions about your roofing project
             </h2>
             <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-                Clear answers about roof work, quotes and our Mount Gambier location.
+                Clear answers about roofing services, free estimates and our Cork location.
             </p>
             <div className="p-6 bg-mist/40 border border-mist">
               <span className="font-body text-13 text-forest font-medium block mb-1">
@@ -57,7 +57,7 @@ export default function HomeFaqs() {
                 Call or message our team and we will be happy to help.
               </p>
               <a
-                href="tel:+61448752232"
+                href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-body text-13 text-forest font-medium underline underline-offset-4"

@@ -9,19 +9,19 @@ import JsonLd from '@/components/ui/JsonLd';
 import { generateLocalBusinessSchema } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://djroofrestorationandrepairs.com.au'),
+  metadataBase: new URL('https://www.provenroofing.ie'),
   title: {
-    default: 'DJ Maintenance & Construction',
+    default: 'Proven Roofing',
     template: '%s',
   },
   description:
-    'DJ Maintenance & Construction provides roof restoration, repairs, replacement, guttering and shed services in Mount Gambier, South Australia. Call +61 448 752 232.',
+    'Proven Roofing LTD provides roof repairs, new roofs, flat roofing and guttering in Cork, Ireland. Call +353 87 069 0272.',
   keywords: [
-    'DJ Maintenance & Construction',
-    'roof restoration Mount Gambier',
-    'roof repairs South Australia',
+    'Proven Roofing',
+    'roofing contractor Cork',
+    'roof repairs County Cork',
   ],
-  authors: [{ name: 'DJ Maintenance & Construction' }],
+  authors: [{ name: 'Proven Roofing' }],
   icons: {
     icon: [
       { url: '/icon.png', sizes: '32x32', type: 'image/png' },
@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en-AU" className="scroll-smooth">
+    <html lang="en-IE" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -47,7 +47,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F5F5F3] selection:text-[#242729]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F4F8FC] selection:text-[#172C4D]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />

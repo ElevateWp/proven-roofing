@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Request a Roofing Quote',
   description:
-    'Request a quote for roof restoration, repairs, replacement, guttering or shed work from DJ Maintenance & Construction in Mount Gambier.',
+    'Request a free estimate for roof repairs, new roofs, flat roofing or guttering from Proven Roofing in Cork.',
   pathname: '/request-a-quote/',
 });
 
@@ -34,7 +34,7 @@ const BOOKING_STEPS = [
   {
     step: 4,
     title: 'Roofing Work',
-    description: 'Dino and the team complete the agreed roofing work at your property.',
+    description: 'Michael and the team complete the agreed roofing work at your property.',
   },
 ];
 
@@ -54,7 +54,7 @@ export default function BookAppointmentPage() {
                 </span>
                 <WordRevealH1 text="Request a roofing quote." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="Tell us about your roof repairs, restoration, replacement, guttering or shed project in Mount Gambier." />
+                  <ScrubbedParagraph text="Tell us about your roof repairs, new roof, flat roof or guttering project in Cork." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -64,10 +64,10 @@ export default function BookAppointmentPage() {
                 <div className="p-6 bg-paper border border-mist space-y-3 font-body text-13 text-forest-ink/80 shadow-sm">
                   <span className="font-medium text-forest block">Call our team:</span>
                   <p className="text-forest-ink/70">
-                    Prefer to speak with us directly? Call during opening hours.
+                    Prefer to speak with us directly? Call any time.
                   </p>
                   <a
-                    href="tel:+61448752232"
+                    href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
                     className="font-display text-17 text-forest font-semibold block hover:underline"
                   >
                     {CLINIC_INFO.contact.phone}
@@ -179,7 +179,7 @@ export default function BookAppointmentPage() {
                 <span className="font-body text-13 text-forest block mb-2 font-medium uppercase tracking-wider">Location</span>
                 <h3 className="font-display text-21 text-forest-ink mb-4">Service Area</h3>
                 <p className="font-body text-13 text-forest-ink/80 leading-relaxed mb-3">
-                  We serve Mount Gambier and surrounding areas. Contact us to confirm availability for your property.
+                  We serve Cork and surrounding areas. Contact us to confirm availability for your property.
                 </p>
               </div>
             </AnimateOnScroll>

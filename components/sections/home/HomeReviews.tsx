@@ -4,18 +4,9 @@ import { Star } from 'lucide-react';
 import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 
 const REVIEWS = [
-  {
-    name: 'Wendy Webster',
-    quote: 'Thank you to Dino and the team at DJ Maintenance. Our new roof looks amazing!',
-  },
-  {
-    name: 'Oopy',
-    quote: 'Awesome work.',
-  },
-  {
-    name: 'nathan h',
-    quote: 'Dino and his crew were great to deal with from start to finish. Quality work, communication was great, and we were very happy with pricing. Dino helped us transform our aged 80s roof, gutters and roller door with a fresh, modern look. I would highly recommend.',
-  },
+  { name: 'Neney Dooley', quote: 'Exceptional service from Michael. He initially quoted me to replace my skylight in January this year on my property in Douglas, Cork. I called back last week and the price has not increased. I’m very grateful he …' },
+  { name: 'TTVSebastian2019 Havlik', quote: 'Very good company.' },
+  { name: 'Макар Ясеницький', quote: 'Did a decent job on my flat roof in Rochestown, Cork. Highly recommended.' },
 ];
 
 export default function HomeReviews() {

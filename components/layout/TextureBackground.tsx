@@ -93,13 +93,13 @@ export default function TextureBackground({
           <linearGradient id={`hero-mask-grad-${variant}`} x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0" />
             <stop offset="35%" stopColor="#FFFFFF" stopOpacity="0.2" />
-            <stop offset="70%" stopColor="#171A1C" stopOpacity="0.7" />
-            <stop offset="100%" stopColor="#171A1C" stopOpacity="0.95" />
+            <stop offset="70%" stopColor="#0B2348" stopOpacity="0.7" />
+            <stop offset="100%" stopColor="#0B2348" stopOpacity="0.95" />
           </linearGradient>
 
           <radialGradient id={`divider-radial-${variant}`} cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="#171A1C" stopOpacity="0.8" />
-            <stop offset="60%" stopColor="#171A1C" stopOpacity="0.4" />
+            <stop offset="0%" stopColor="#0B2348" stopOpacity="0.8" />
+            <stop offset="60%" stopColor="#0B2348" stopOpacity="0.4" />
             <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0" />
           </radialGradient>
         </defs>

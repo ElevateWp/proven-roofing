@@ -5,20 +5,20 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 
 const REASONS = [
   {
-    title: 'A fresh look for your roof',
-    description: 'A recent customer praised the fresh, modern look of their restored roof, gutters and roller door.',
+    title: 'Skylight replacement in Douglas',
+    description: 'A customer was grateful that the quoted price had not increased when they called back.',
   },
   {
-    title: 'Clear communication',
-    description: 'Customers have praised Dino and the team for clear communication from start to finish.',
+    title: 'A very good company',
+    description: 'A customer described Proven Roofing as a very good company.',
   },
   {
-    title: 'Quality work',
-    description: 'Customers describe the finished roofing work as high quality and recommend the team.',
+    title: 'Flat roof in Rochestown',
+    description: 'A customer said the flat roof job was decent and highly recommended Proven Roofing.',
   },
   {
-    title: 'Roofing and related work',
-    description: 'From roof repairs and restoration to replacement, sheds and gutters, we discuss the work and agree the scope before starting.',
+    title: 'Roofing services across Cork',
+    description: 'From repairs and new roofs to gutters, skylights and roof details, we explain the agreed scope before work begins.',
   },
 ];
 
@@ -34,7 +34,7 @@ export default function HomeWhyUs() {
                 Our Approach
               </span>
               <h2 className="font-display text-26 sm:text-33 md:text-41 text-forest-ink mb-8 md:mb-10 leading-tight">
-                Why Customers Choose DJ Maintenance & Construction
+                Local roofing knowledge, clear quotes and quality workmanship
               </h2>
 
               <div className="divide-y divide-mist">
@@ -72,8 +72,8 @@ export default function HomeWhyUs() {
                       className="object-cover"
                     />
                   </MediaParallax>
-                  <div className="absolute bottom-3 left-3 bg-[#242729]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-                    Roof restoration
+                  <div className="absolute bottom-3 left-3 bg-[#172C4D]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
+                    Roof repairs
                   </div>
                 </div>
                 {/* Additional residential imagery */}
@@ -87,7 +87,7 @@ export default function HomeWhyUs() {
                   />
                 </div>
                 {/* Residential property detail */}
-                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F5F5F3] overflow-hidden border border-mist shadow-sm">
+                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F4F8FC] overflow-hidden border border-mist shadow-sm">
                   <Image
                     src="/images/jsroof-stock-04.jpg"
                     alt="Traditional pitched roof on a home"
@@ -95,8 +95,8 @@ export default function HomeWhyUs() {
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover object-top"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#242729]/80 text-paper font-body text-12 px-3 py-2 text-center">
-                    Mount Gambier homes
+                  <div className="absolute bottom-0 left-0 right-0 bg-[#172C4D]/80 text-paper font-body text-12 px-3 py-2 text-center">
+                    Cork homes
                   </div>
                 </div>
               </div>

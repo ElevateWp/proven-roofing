@@ -11,23 +11,14 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Customer Testimonials',
   description:
-    'Read positive customer feedback about roof restoration and roofing work by DJ Maintenance & Construction in Mount Gambier.',
+    'Read positive customer feedback about roofing and guttering work by Proven Roofing in Cork.',
   pathname: '/testimonials/',
 });
 
 const TESTIMONIALS = [
-  {
-    name: 'Wendy Webster',
-    quote: 'Thank you to Dino and the team at DJ Maintenance. Our new roof looks amazing!',
-  },
-  {
-    name: 'Oopy',
-    quote: 'Awesome work.',
-  },
-  {
-    name: 'nathan h',
-    quote: 'Dino and his crew were great to deal with from start to finish. Quality work, communication was great, and we were very happy with pricing. Dino helped us transform our aged 80s roof, gutters and roller door with a fresh, modern look. I would highly recommend.',
-  },
+  { name: 'Neney Dooley', quote: 'Exceptional service from Michael. He initially quoted me to replace my skylight in January this year on my property in Douglas, Cork. I called back last week and the price has not increased. I’m very grateful he …' },
+  { name: 'TTVSebastian2019 Havlik', quote: 'Very good company.' },
+  { name: 'Макар Ясеницький', quote: 'Did a decent job on my flat roof in Rochestown, Cork. Highly recommended.' },
 ];
 
 function ReviewStars() {
@@ -54,7 +45,7 @@ export default function TestimonialsPage() {
               </span>
               <WordRevealH1 text="What our customers say." />
               <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/90 md:text-21">
-                A selection of positive feedback shared by DJ Maintenance & Construction customers.
+                A selection of positive feedback shared by Proven Roofing customers.
               </p>
             </AnimateOnScroll>
           </div>
@@ -71,8 +62,8 @@ export default function TestimonialsPage() {
               <h2 className="font-display text-26 text-forest-ink md:text-33">Reviews from our customers</h2>
             </div>
             <div className="border-l-2 border-greenAccent pl-4">
-              <span className="block font-body text-13 font-medium uppercase tracking-wider text-forest-light">DJ Maintenance & Construction</span>
-              <span className="mt-1 block font-body text-12 text-forest-light">Mount Gambier, South Australia</span>
+              <span className="block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Proven Roofing</span>
+              <span className="mt-1 block font-body text-12 text-forest-light">Cork, Ireland</span>
             </div>
           </div>
 
@@ -99,13 +90,13 @@ export default function TestimonialsPage() {
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
           <div>
             <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">
-              DJ Maintenance & Construction · Mount Gambier
+              Proven Roofing · Cork
             </span>
-            <h2 className="font-display text-26 md:text-33">Need roofing work in Mount Gambier?</h2>
+            <h2 className="font-display text-26 md:text-33">Need roofing work in Cork?</h2>
           </div>
           <Link
             href="/request-a-quote/"
-            className="inline-flex min-h-12 items-center justify-center border border-paper bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-[#E6E7E5]"
+            className="inline-flex min-h-12 items-center justify-center border border-paper bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-[#FCE5D9]"
           >
             Request a quote
           </Link>

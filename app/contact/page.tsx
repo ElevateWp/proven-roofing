@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Contact and Service Area',
   description:
-    'Contact DJ Maintenance & Construction on +61 448 752 232 about roof restoration, roof repairs, sheds, guttering and roof replacement in Mount Gambier.',
+    'Contact Proven Roofing on +353 87 069 0272 about roof repairs, new roofs, flat roofing and guttering in Cork.',
   pathname: '/contact/',
 });
 
@@ -31,9 +31,9 @@ export default function ContactPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Contact & Quotes
                 </span>
-                <WordRevealH1 text="Talk to Dino and the team." />
+                <WordRevealH1 text="Talk to Michael and the team." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Call us to discuss roof restoration, repairs, replacement, guttering or shed work.
+                  Call us to discuss roof repairs, flat roofing, new roofs or guttering.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -90,13 +90,13 @@ export default function ContactPage() {
                           {CLINIC_INFO.contact.phone}
                         </a>
                       </div>
-                      <span className="font-body text-13 text-forest-ink/60">Call to confirm opening hours</span>
+                      <span className="font-body text-13 text-forest-ink/60">Open 24 hours</span>
                     </div>
 
                     <div className="py-5">
                       <span className="font-body text-13 text-forest-ink/60 block">Website</span>
                       <a href={CLINIC_INFO.contact.website} className="font-display text-21 text-forest break-all hover:underline" target="_blank" rel="noopener noreferrer">
-                        djroofrestorationandrepairs.com.au
+                        provenroofing.ie
                       </a>
                     </div>
 

@@ -10,15 +10,15 @@ import { CLINIC_INFO, SERVICES } from '@/lib/clinic-data';
 import { createMetadata, generateMedicalProcedureSchema } from '@/lib/seo';
 
 const RELATED_SERVICE_SLUGS: Record<string, string[]> = {
-  'roof-installation': ['roof-repairs', 'roof-replacement', 'roof-inspections'],
-  'roof-repairs': ['roof-inspections', 'emergency-roof-repairs', 'roof-replacement'],
-  'roof-replacement': ['roof-installation', 'roof-inspections', 'gutter-installation-maintenance'],
-  'shed-installation': ['shed-repairs-restoration', 'custom-roofing-projects', 'gutter-installation-maintenance'],
-  'shed-repairs-restoration': ['shed-installation', 'roof-repairs', 'roof-inspections'],
-  'roof-inspections': ['roof-repairs', 'roof-replacement', 'gutter-installation-maintenance'],
-  'gutter-installation-maintenance': ['roof-repairs', 'roof-replacement', 'roof-inspections'],
-  'custom-roofing-projects': ['roof-installation', 'shed-installation', 'roof-replacement'],
-  'emergency-roof-repairs': ['roof-repairs', 'roof-inspections', 'roof-replacement'],
+  'new-roofs': ['roof-repairs', 'flat-roofing', 'roof-skylights'],
+  'roof-repairs': ['roof-skylights', 'roof-flashing', 'flat-roofing'],
+  'flat-roofing': ['new-roofs', 'roof-skylights', 'guttering-installations'],
+  'roof-tiling': ['roof-valleys', 'chimneys', 'guttering-installations'],
+  'roof-valleys': ['roof-tiling', 'roof-repairs', 'roof-skylights'],
+  'roof-skylights': ['roof-repairs', 'flat-roofing', 'guttering-installations'],
+  'guttering-installations': ['roof-repairs', 'flat-roofing', 'roof-skylights'],
+  'chimneys': ['new-roofs', 'roof-tiling', 'flat-roofing'],
+  'roof-flashing': ['roof-repairs', 'roof-skylights', 'flat-roofing'],
 };
 
 export default function ServiceLandingPage({ slug }: { slug: string }) {
@@ -39,7 +39,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
             <div className="lg:col-span-7">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">
-                  DJ Maintenance & Construction · Mount Gambier
+                  Proven Roofing · Cork
                 </span>
                 <WordRevealH1 text={service.name} />
                 <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">
@@ -70,7 +70,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
         <div className="mx-auto max-w-site px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
             <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Your project</span>
-            <h2 className="font-display text-33 text-forest-ink md:text-41">Planning {service.name.toLowerCase()} around your property</h2>
+            <h2 className="font-display text-33 text-forest-ink md:text-41">Planning {service.name.toLowerCase()} for your property</h2>
             <p className="mt-4 max-w-3xl font-body text-15 leading-relaxed text-forest-ink/80 md:text-17">{service.clinicalExplanation}</p>
           </AnimateOnScroll>
           <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -161,8 +161,8 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="border-b border-mist py-16 md:py-24">
         <div className="mx-auto max-w-site px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
-            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">What to expect</span>
-            <h2 className="font-display text-33 text-forest-ink md:text-41">Before, during and after the work</h2>
+            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Project planning</span>
+            <h2 className="font-display text-33 text-forest-ink md:text-41">Planning the work</h2>
             <p className="mt-4 max-w-3xl font-body text-15 leading-relaxed text-forest-light md:text-17">Every property and agreed scope is different. These are the main points to plan through with the team.</p>
           </AnimateOnScroll>
           <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -230,7 +230,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
           <div>
-            <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">DJ Maintenance & Construction · Mount Gambier roofing contractor</span>
+            <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Proven Roofing · Cork roofing contractor</span>
             <h2 className="font-display text-26 md:text-33">Tell us what you have in mind.</h2>
           </div>
           <Link href="/request-a-quote/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-softBlue">Request a quote</Link>

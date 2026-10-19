@@ -1,5 +1,5 @@
 /**
- * Nova Dental Motion System Constants & Primitives
+ * Proven Roofing Motion System Constants & Primitives
  * Strict adherence to the motion budget:
  * - GSAP 3 + Lenis ticker
  * - Transforms & Opacity only
